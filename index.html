@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Para Nayeli 💕</title>
+  <style>
+    body{
+      text-align:center;
+      font-family:Arial;
+      background:pink;
+      height:100vh;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+    }
+    #no{
+      position:absolute;
+    }
+    button{
+      font-size:20px;
+      padding:10px 20px;
+      border:none;
+      border-radius:20px;
+      cursor:pointer;
+    }
+    #si{background:red;color:white;}
+    #no{background:gray;color:white;}
+    p a{
+      color:red;
+      font-weight:bold;
+      text-decoration:none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Nayeli, ¿quieres ser mi San Valentín? 💘</h1>
+
+  <p>
+    Eres una persona muy especial para mí 💖
+    <a href="https://neocities.org">Haz clic aquí</a>
+  </p>
+
+  <button id="si" onclick="alert('¡Sabía que dirías que sí! Te quiero 💕')">
+    Sí ❤️
+  </button>
+
+  <button id="no" onmouseover="mover()">
+    No ❌
+  </button>
+
+  <script>
+    function mover(){
+      var ancho = window.innerWidth - 100;
+      var alto = window.innerHeight - 100;
+
+      var x = Math.random() * ancho;
+      var y = Math.random() * alto;
+
+      document.getElementById('no').style.left = x + 'px';
+      document.getElementById('no').style.top = y + 'px';
+    }
+  </script>
+
+</body>
+</html>
